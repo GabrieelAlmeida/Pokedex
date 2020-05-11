@@ -12,8 +12,6 @@ export default class Card extends Component{
         listColors: ['#6959CD', '#483D8B', '#0000FF', '#00BFFF' , '#4682B4', '#00FF7F', '#D2691E', '#FF4500' ,'#FFFF00']
     }
 
-
-
     componentDidMount(){
         this.loadPokemons();
     }
@@ -34,16 +32,7 @@ export default class Card extends Component{
 
     }
 
-    
-
-
-
-
-
     render(){
-
-
-
         return(
             <div id='app'>
                 {this.state.pokemons.map(item => (
@@ -55,9 +44,6 @@ export default class Card extends Component{
                     </div>
                 ))}
             </div>
-            
-        
-
         );
     }
 
